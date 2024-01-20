@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //import logo from './favicon.ico';
 import logo from './codesqaud.png';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
 import Login from './components/login';

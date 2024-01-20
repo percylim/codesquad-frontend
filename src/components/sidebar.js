@@ -17,7 +17,7 @@ const Sidebar = () => {
  // var name = localStorage.getItem('name');
   return (
     <div
-      style={{ display: 'flex', position: 'absolute', top: '0px', height: '130vh', overflow: 'scroll initial' }}
+      style={{ display: 'flex', position: 'absolute', top: '0px', height: '50vh', overflow: 'scroll initial' }}
     >
       <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
@@ -36,40 +36,24 @@ const Sidebar = () => {
 
             <NavLink exact to="#" activeClassName="activeClicked">
     
-            <CDBSidebarMenuItem icon="th-large">Account Setting</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="th-large" style={{backgroundColor:'red', color: 'white'}}>Getting Start</CDBSidebarMenuItem>
             </NavLink>
 
-             <NavLink exact to="#" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="shopping-basket">Transaction</CDBSidebarMenuItem>
+             <NavLink exact to="/Login" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon='fas fa-portrait'>Admin Login</CDBSidebarMenuItem>
             </NavLink>
 
-            <NavLink exact to="#" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="shopping-cart">Purchase</CDBSidebarMenuItem>
+            <NavLink exact to="UserLogin" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon='fa fa-id-badge'>User Login</CDBSidebarMenuItem>
             </NavLink>
 
-            <NavLink exact to="#" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="truck">Sales</CDBSidebarMenuItem>
+            <NavLink exact to="HelpPage" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="fa fa-question">Help</CDBSidebarMenuItem>
              </NavLink>
-
-            <NavLink exact to="#"  activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="server">Stock Control</CDBSidebarMenuItem>
-            </NavLink>
-
-            <NavLink exact to="#" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon='th'>
-                Analysing
-              </CDBSidebarMenuItem>
-            </NavLink>
-
-            <NavLink exact to="#" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="sticky-note">
-               Financial Report 
-              </CDBSidebarMenuItem>
-            </NavLink>
 
             <NavLink link to="/logout"  activeClassName="activeClicked">
 
-            <CDBSidebarMenuItem icon="sign-out-alt">User Logout</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon='sign-out-alt'>User Logout</CDBSidebarMenuItem>
            </NavLink>
 
 
@@ -82,7 +66,7 @@ const Sidebar = () => {
               padding: '20px 5px',
             }}
           >
-          @2021 CopyRight by Code Squad Technology
+          @2024 CopyRight by Code Squad Technology
           </div>
         </CDBSidebarFooter>
       </CDBSidebar>

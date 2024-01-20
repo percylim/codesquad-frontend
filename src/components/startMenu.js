@@ -11,10 +11,10 @@ export default function StartMenu() {
                   paddingTop: 0, }}>
 
       <Dropdown>
-        <Dropdown.Toggle variant="danger">
+        <Dropdown.Toggle variant="dark">
           Getting Start
         </Dropdown.Toggle>
-        <Dropdown.Menu variant="dark">
+        <Dropdown.Menu>
           <Dropdown.Item href="/Login">
             Admin Login
           </Dropdown.Item>

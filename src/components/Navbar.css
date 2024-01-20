@@ -1,5 +1,5 @@
 /* Add a black background color to the top navigation */
-..navbar {
+.navbar {
   background: linear-gradient(70deg, rgb(28, 27, 27) 0%, rgb(23, 26, 24) 100%);
   height: 50px;
   display: flex;
